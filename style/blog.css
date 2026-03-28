@@ -1,0 +1,44 @@
+/* Blog settings */
+#blog-content {
+	order: 1;
+	flex: 12;
+}
+
+#blog-sidebar {
+	order: 0;
+	flex: 3;
+}
+
+#blog-ad {
+	order: 2;
+	flex: 2;
+}
+
+
+.blog-sidebar-year {
+	font-weight: bold;
+}
+
+.blog-sidebar-header {
+	margin: 0;
+	padding: 5px;
+	border-radius: 20px;
+	border: 1px solid rgb(44, 44, 99);
+}
+
+.blog-sidebar-article-list {
+	width: 90%;
+	margin-left: auto;
+	margin-right: 0;
+	display: flex;
+	flex-direction: column;
+	text-decoration: underline;
+}
+
+.blog-sidebar-article {
+	text-overflow: ellipsis;
+}
+
+.blog-sidebar-header-arrow {
+	transform: rotate(90);
+}
