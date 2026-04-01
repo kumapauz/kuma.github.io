@@ -8,9 +8,7 @@
 
 	<link rel="icon" href="images/common/icon.png" type="image/png" />
 	
-	<!--Scripts to generate common info like the navbar and footer-->
-	<link rel="stylesheet" href="style/common.css" />
-	<script defer src="script/common.js"></script>
+	<link rel="stylesheet" href="style/styles.css" />
 
 	<!--Grabs the Noto Sans font from Google-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,52 +18,65 @@
 </head>
 
 <body>
-	<header>
-		<nav id="nav-bar">
-		</nav>
-	</header>
+	<div id="content-wrapper">
 
-	<main>
-		<h1>Latest News</h1>
+		<header>
+			<img src="img/logo.png" id="header-img" />
+		</header>
+		
+		<section class="link-section">
+		<h1 class="content-header">Socials</h1>
+		<a href="https://www.github.com/kumapauz" class="link-entry">
+			<img class="link-icon" src="img/github.png" />
+			<span class="link-text">GitHub</span>
+		</a>
+		
+		<a href="https://www.youtube.com/@KumaPauZ" class="link-entry">
+			<img class="link-icon" src="img/youtube.png" />
+			<span class="link-text">YouTube</span>
+		</a>
+		
+		<a href="https://www.twitter.com/KumaPauZ" class="link-entry">
+			<img class="link-icon" src="img/twitter.png" />
+			<span class="link-text">Twitter</span>
+		</a>
+		
+		<a href="https://kumapauz.itch.io/" class="link-entry">
+			<img class="link-icon" src="img/itchio.png" />
+			<span class="link-text">Itch.io</span>
+		</a>
+		</section>
+		
 
-		<article class="news-article">
-			<h2>Project Reignition v0.4.2 is available to download now!</h2>
-			<p>The latest update fixes a bunch of bugs found in v0.4.0. It includes every stage in the original game except for Night Palace and the Lost Prologue. Hopefully it won't be too much longer before the entire game is available to play, cutscenes and all! </p>
-		</article>
+		<!--PROJECTS GO DOWN HERE-->
+		<section class="link-section">
+			<h1 class="content-header">Projects</h1>
+			<a href="" class="link-entry">
+				<img class="link-icon" src="img/mystery.png" />
+				<span class="link-text">COMING SOON</span>
+			</a>
 
-		<article class="main-content">
-			<section>
-				<h2>Welcome to the website!</h2>
-				<p>This is a website created by KumaPauZ, who finally decided to bite the bullet and learn how to design
-					a website from scratch.</p>
-				<p>Hot dang, it's about time.</p>
-			</section>
+			<a href="https://github.com/kumapauz/project-reignition" class="link-entry">
+				<img class="link-icon" src="img/reignition.png" />
+				<span class="link-text">Project Reignition</span>
+			</a>
 
-			<section>
-				<h3>What this website is for</h3>
-				<p>This website serves as a place for me to design a website and learn how web development works.
-					The site will also contain information on all the things I've has worked on, from video games to
-					random art pieces!</p>
-					
-				<p>Eventually, I would also like to implement more complex features such as
-					searching, user accounts, comments, and maybe even in-browser .io-like games.</p>
+			<a href="https://kumapauz.itch.io/shaman-mask" class="link-entry">
+				<img class="link-icon" src="img/shaman-mask.png" />
+				<span class="link-text">Shaman Mask</span>
+			</a>
+		</section>
 
-				<p>If that sounds interesting to you, check in on this page every now and then--hopefully someday there
-					will be something interesting!</p>
-			</section>
-		</article>
-	</main>
+		<div>
+			<!--This is just a spacer to force the footer to the bottom of the page.-->
+		</div>
 
-	<footer id="footer"></footer>
-	<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-	<script>
-	kofiWidgetOverlay.draw('kumapauz', {
-		'type': 'floating-chat',
-		'floating-chat.donateButton.text': 'Support me',
-		'floating-chat.donateButton.background-color': '#ff5f5f',
-		'floating-chat.donateButton.text-color': '#fff'
-	});
-	</script>
+		<footer id="footer">
+			<p class="footer-text">Copyright &copy; <span id="footer-date"></span> KumaPauZ</p>
+		</footer>
+		<script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+		<script defer src="script/index.js"></script>
+	</div>
 </body>
 
 </html>
